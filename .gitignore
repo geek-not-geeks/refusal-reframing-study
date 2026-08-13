@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Research data (contains raw prompts/outputs — never publish)
+data/
+*.csv
