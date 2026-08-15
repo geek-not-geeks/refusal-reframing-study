@@ -67,10 +67,9 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 # the real current string before running, don't assume the ones below are
 # still current when you actually run this.
 MODELS = {
-    "openai":    "REPLACE_WITH_EXACT_MODEL_STRING",     # e.g. a current GPT model
-    "anthropic": "REPLACE_WITH_EXACT_MODEL_STRING",     # e.g. a current Claude model
-    "google":    "REPLACE_WITH_EXACT_MODEL_STRING",     # e.g. a current Gemini model
-    # "opensource": "REPLACE_WITH_EXACT_MODEL_STRING",  # optional 4th model
+    "openai":    "gpt-5.4-mini",          
+    "anthropic": "claude-haiku-4-5-20251001",  
+    "google":    "gemini-3.6-flash",      
 }
 
 # --- Output file ---------------------------------------------------------
