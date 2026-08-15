@@ -165,7 +165,7 @@ STUDY_GRID = {
     # ... repeat this pattern for every (category, tier) combination you
     # locked in Phase 1.5. This is tedious but this IS your methodology --
     # don't shortcut it, this dict IS the experiment.
-}
+
 
 TRIALS_PER_CELL = 5  # matches your Phase 1.7 sample size calculation
 
