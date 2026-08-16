@@ -38,6 +38,11 @@ import time
 import datetime
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()  # reads .env file in the same folder and loads keys into
+                # the environment -- WITHOUT this line, os.environ.get()
+                # below finds nothing, even if .env has real keys in it.
+
 # ==============================================================================
 # SECTION 1: SETUP & CONFIG
 # ==============================================================================
