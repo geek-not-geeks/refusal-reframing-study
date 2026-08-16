@@ -92,7 +92,7 @@ ALLOWED_OPENAI_MODEL = "gpt-5.6-luna"
 
 # --- Output file ---------------------------------------------------------
 # All trial data gets appended here. Never delete/overwrite mid-study.
-OUTPUT_CSV = Path("study_results.csv")
+OUTPUT_CSV = Path("data/study_results.csv")
 
 # Column order -- LOCKED once you start real data collection.
 CSV_COLUMNS = [
@@ -474,20 +474,22 @@ def run_full_study_for_provider(provider: str):
 # to run_full_study_for_provider() until your rubric has been checked against
 # real outputs.
 
-def run_pilot(provider: str, n_trials: int = 3):
+def run_pilot(provider: str, n_trials: int = 1):
     """
-    Runs a SMALL number of trials per category (ignoring the full tier/trial
-    grid) so you can manually inspect whether your coding rules make sense
-    on real output before committing your full API budget.
+    Runs a SMALL number of trials per (category, tier) combination -- using
+    the full 3x3 grid, not just "low" -- so you can manually inspect
+    whether your coding rules make sense on real output BEFORE committing
+    your full API budget. n_trials=1 means one trial per cell (9 total),
+    which is usually enough to sanity-check the rubric without burning
+    much budget.
     """
     ensure_csv_exists()
     delay = PROVIDER_DELAY_SECONDS.get(provider, 2)
     for category in CATEGORIES:
-        for trial_num in range(1, n_trials + 1):
-            # Uses "low" tier as a placeholder for pilot purposes --
-            # you're checking your CODING RULES here, not your full design yet.
-            run_single_trial(provider, category, "low", trial_num)
-            time.sleep(delay)
+        for tier in SENSITIVITY_TIERS:
+            for trial_num in range(1, n_trials + 1):
+                run_single_trial(provider, category, tier, trial_num)
+                time.sleep(delay)
 
 
 if __name__ == "__main__":
