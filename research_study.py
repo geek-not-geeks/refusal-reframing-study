@@ -67,7 +67,7 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 # the real current string before running, don't assume the ones below are
 # still current when you actually run this.
 MODELS = {
-    "openai":    "gpt-5.4-mini",          
+    "openai":    "gpt-5.6-luna",          
     "anthropic": "claude-haiku-4-5-20251001",  
     "google":    "gemini-3.6-flash",      
 }
