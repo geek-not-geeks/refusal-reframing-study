@@ -220,3 +220,4 @@ __marimo__/
 # Research data (contains raw prompts/outputs — never publish)
 data/
 *.csv
+.DS_Store
