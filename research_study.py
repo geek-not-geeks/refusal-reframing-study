@@ -353,8 +353,8 @@ if __name__ == "__main__":
     #run_pilot("google", n_trials=1)
 
     # STEP D: only after ALL pilots look clean, run the full study:
-    run_full_study_for_provider("openai")
-    # run_full_study_for_provider("anthropic")
+    #run_full_study_for_provider("openai")
+    run_full_study_for_provider("anthropic")
     # run_full_study_for_provider("google")
 
     print("Script loaded. Uncomment the appropriate STEP in the "
