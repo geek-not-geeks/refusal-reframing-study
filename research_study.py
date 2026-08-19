@@ -47,7 +47,7 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 MODELS = {
     "openai":    "gpt-5.6-luna",
     "anthropic": "claude-haiku-4-5-20251001",
-    "google":    "gemini-3.6-flash",
+    "google":    "gemini-3.5-flash-lite",
 }
 
 ALLOWED_OPENAI_MODEL = "gpt-5.6-luna"
@@ -354,8 +354,8 @@ if __name__ == "__main__":
 
     # STEP D: only after ALL pilots look clean, run the full study:
     #run_full_study_for_provider("openai")
-    run_full_study_for_provider("anthropic")
-    # run_full_study_for_provider("google")
+    #run_full_study_for_provider("anthropic")
+    run_full_study_for_provider("google")
 
     print("Script loaded. Uncomment the appropriate STEP in the "
           "if __name__ == '__main__' block to begin. See comments above.")
