@@ -22,7 +22,7 @@ from pathlib import Path
 # If your three providers are in separate files, combine them first:
 #   cat data/study_results.csv > data/combined_results.csv
 # (adjust paths to match your actual file layout)
-CSV_PATH = Path("data/study_results.csv")  # all 3 providers already in one file
+CSV_PATH = Path("data/study_results_FULLRUN_ONLY.csv")  # all 3 providers already in one file
 
 def load_data():
     df = pd.read_csv(CSV_PATH)
