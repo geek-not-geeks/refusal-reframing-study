@@ -1,17 +1,8 @@
 # Refusal Explanation and Reframing Success Across AI Models
 
-*[Working title — feel free to change once findings are in. Something like
-"When Transparency Becomes a Map" or "The Cost of Explaining No" might work
-better once you know what you actually found.]*
-
 ---
 
 ## Abstract
-
-*[Write this last, once results exist — a good abstract is usually the
-paper's tightest paragraph, and it's much easier to write once you know
-what you're summarizing. Placeholder for now: one sentence on the question,
-one on the method, one on the finding, one on why it matters.]*
 
 ---
 
@@ -41,36 +32,24 @@ Separately, work on persuasion-based jailbreaking has shown that reframing a req
 
 ---
 
-*[Sections below to be written once data collection and analysis are complete:]*
+*[Sections below will be updated once data collection and analysis is  complete:]*
 
 ## 3. Methodology
-*[Pull directly from methodology.md — mostly a matter of light editing for
-narrative flow once it's sitting inside the full paper rather than as a
-standalone document.]*
+
 
 ## 4. Results
-*[Tables/charts + written interpretation, from Phase 5 of your execution
-plan.]*
+
 
 ## 5. Discussion
-*[What the results mean, especially any cross-model or cross-category
-inconsistency — this is often where the most interesting sentence in the
-whole paper ends up living.]*
+
 
 ## 6. Proposed Mitigation
-*[Your concrete design recommendation from Phase 6.]*
+
 
 ## 7. Limitations
-*[Pull from methodology.md's limitations section, expand if new limitations
-surfaced during actual data collection that weren't anticipated at the
-design stage.]*
+
 
 ## 8. Ethics Statement
-*[Pull from methodology.md, update with actual disclosure status if
-applicable.]*
 
 ## References
-*[Full citations for Liu et al., Rao et al., the para-jailbreaking paper,
-the persuasion-based jailbreak paper, HarmBench, AdvBench, JailbreakBench,
-and any others you end up citing — format consistently, e.g. APA or IEEE,
-whichever your submission target expects.]*
+

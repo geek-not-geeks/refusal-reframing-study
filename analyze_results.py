@@ -1,9 +1,9 @@
 """
-Statistical analysis script -- run this AFTER all manual corrections
-(fix_pilot_rows.py-style fixes) have been applied to your CSV files.
+Statistical analysis script -- ran this AFTER all manual corrections
+(fix_pilot_rows.py-style fixes) have been applied to the existing CSV files.
 
-This computes:
-1. Refusal rate by provider and category (with confidence intervals)
+This computes-
+1. Refusal rate by provider and category (with confidence intervals).
 2. Chi-square test: does refusal rate differ significantly by category?
 3. Chi-square test: does refusal rate differ significantly by provider?
 4. Self-correction rate by provider (with the two-metric split from
@@ -18,7 +18,6 @@ import pandas as pd
 from scipy import stats
 from pathlib import Path
 
-# --- CONFIG: point this at your combined/cleaned CSV ---
 # If your three providers are in separate files, combine them first:
 #   cat data/study_results.csv > data/combined_results.csv
 # (adjust paths to match your actual file layout)
